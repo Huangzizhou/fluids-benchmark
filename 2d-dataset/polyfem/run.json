@@ -1,0 +1,40 @@
+{
+    "mesh": "/home/zizhou/model-problems/quad.obj",
+    
+    "normalize_mesh": false, 
+    "n_refs": 0,  
+    "density": false,
+  
+    "particle": false,
+    "advection_order": 1,
+    "advection_RK": 1,
+  
+    "BDF_order": 3,
+  
+    "tend": 0.1,
+    "time_steps": 400,
+    "save_time_sequence": false,
+    "skip_frame": 1,
+    "discr_order": 2,
+    "pressure_discr_order": 1,
+  
+    "problem": "TaylorGreenVortex",
+    "problem_params": {
+        "time_dependent": true,
+        "viscosity": 1
+    },
+    "params": { "viscosity": 1 },
+  
+    "tensor_formulation": "NavierStokes",
+    
+    "solver_type": "Pardiso",
+    "rhs_solver_type": "Pardiso",
+    "solver_params": { 
+      "nl_iterations": 20, 
+      "max_iter": 1000, 
+      "tolerance": 1e-10
+    },
+    "vismesh_rel_area": 1,
+  
+    "output": ""
+  }

@@ -1,0 +1,38 @@
+{
+    "normalize_mesh": false, 
+    "n_refs": 0,  
+    "density": false,
+    "BDF_order": 3,
+  
+    "particle": false,
+    "advection_order": 1,
+    "advection_RK": 1,
+  
+    "tend": 0.1,
+    "time_steps": 400,
+    "save_time_sequence": true,
+    "skip_frame": 1,
+    "discr_order": 2,
+    "pressure_discr_order": 1,
+  
+    "problem": "TaylorGreenVortex",
+    "problem_params": {
+        "time_dependent": true,
+        "viscosity": 1e-3
+    },
+    "params": { "viscosity": 1e-3 },
+  
+    "tensor_formulation": "NavierStokes",
+    
+    "solver_type": "Eigen::SparseLU",
+    "rhs_solver_type": "Eigen::SparseLU",
+    "solver_params": { 
+      "nl_iterations": 20, 
+      "max_iter": 1000
+    },
+    "vismesh_rel_area": 1,
+  
+    "output": "",
+    "export": {
+    }
+  }
